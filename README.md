@@ -13,9 +13,10 @@ How to use the application in Localhost
 1. Install Play Framework Java  
   >Download from https://www.playframework.com/download
 
-2. Clone the project to your computer by using command line
+2. Clone the project to your computer by using command line  
   > git clone https://github.com/GuroKung/CristinaCuisine.git
-3. Go to the directory
+
+3. Go to the directory  
   > activator run
 
 
