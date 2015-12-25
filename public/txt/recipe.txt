@@ -1,0 +1,31 @@
+PadKapraoMoo|Pork, Basil, Garlic, Chilli|340
+PadKapraoKoong|Shrimp, Basil, Garlic, Chilli|300
+LabMoo|Pork, Toastedrice, Coriander, Shallot, Culantro, Chilli|130
+LabKai|Chicken, Toastedrice, Coriander, Shallot, Culantro, Chilli|125
+NamTokMoo|Pork, Toastedrice, Coriander, Shallot, Culantro, Chilli|165
+SomTumThai|Papaya, Tomato, Lime, Cowpea, Peanut|55
+GrilledChicken|Chicken|165
+StirFriedPork|Pork, Garlic|245
+FriedMorningGlory|Morningglory, Garlic, Chilli|210
+BoiledEgg|Egg|75
+KhaiToon|Egg|75
+FriedEgg|Egg|165
+Omelette|Egg|200
+YumWoonSen|Glassnoodle, Pork, Lime, Onion, Tomato, Shallot, Celery, Shrimp|120
+KhaoRadNaKai|Rice, Chicken, Flour, Carrot, Springonion|400
+PadFakthongWithEgg|Pumpkin, Egg|255
+FriedCabbage|Cabbage|230
+YumCannedFish|Cannedfish, Shallot, Lime, Chilli, Springonion|55
+PadKuichaiWithLiver|Chiveflower, Liver|210
+FriedLettuceWithPork|Lettuce, Pork, Garlic|230
+FriedVegetables|Lettuce, Garlic, Mushroom, Carrot, Kale, Babycorn, Broccoli, Cauliflower|210
+YumBoiledEgg|Egg, Shallot, Lime, Chilli|105
+KaiPadKhing|Chicken, Mushroom, Garlic, Ginger, Chilli, Springonion|210
+TomYumKoong|Shrimp, Kaffir, Mushroom, Chilli, Lemongrass, Coriander, Shallot, Coconutmilk, Galangal, Lime|65
+TomYumHed|Kaffir, Mushroom, Chilli, Lemongrass, Coriander, Shallot, Galangal, Lime, Tomato|30
+TomKhaKai|Chicken, Kaffir, Mushroom, Chilli, Lemongrass, Coriander, Shallot, Coconutmilk, Galangal, Lime, Tomato|210
+FriedRicewithSeafood|Rice, Chilli, Lemongrass, Lime, Shrimp, Squid, Kaffir|400
+TomChubChai|Porkrib, Cabbage, Lettuce, Kale, Radish, ChineseCabbage, Garlic|180
+TomKlongFish|Tamarind, Chilli, Basil, Kaffir, Galangal, Lemongrass, Tomato, Shallot, Fish|60
+FriedFishWithCrab|Rice, Egg, Crab, Springonion|610
+GlassnoodlePadThai|Glassnoodle, Shrimp, Peanut, Egg, Chiveflower, Beansprout, Turnip, Lime|520
