@@ -1,4 +1,4 @@
-@(gender: String)
+@(allIngredients: List[String])
 
 <!DOCTYPE html>
 
@@ -50,16 +50,9 @@
         </div>
         <div class="select-ingredient">
           <select ng-model="ingredientCtrl.selected" class="form-control" id="select">
-            <option value="Egg">Egg</option>
-            <option value="Pork">Pork</option>
-            <option value="Garlic">Garlic</option>
-            <option value="Tomato">Tomato</option>
-            <option value="Shrimpo">Shrimp</option>
-            <option value="Papaya">Papaya</option>
-            <option value="Tomato">Tomato</option>
-            <option value="Lime">Lime</option>
-            <option value="Cowpea">Cowpea</option>
-            <option value="Peanut">Peanut</option>
+          @for(ingredient <- allIngredients) {
+            <option value="@ingredient">@ingredient</option>
+          }
           </select>
         </div>
       </div>
@@ -147,7 +140,7 @@
     <div class="row">
       <div class="col-md-6">
         <p>
-          Created by GuroKung
+          Created by GuroKung & iNont & Maxmi
         </p>
       </div>
       <div class="col-md-6">

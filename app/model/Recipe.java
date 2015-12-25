@@ -8,11 +8,13 @@ public class Recipe {
     private String name;
     private ArrayList<String> ingredients;
     private double cal;
+    private String img;
 
-    public Recipe(String name, String[] ing, double cal){
+    public Recipe(String name, String[] ing, double cal, String img){
         this.name = name;
         toArrayList(ing);
         this.cal = cal;
+        this.img = img;
     }
 
     public void toArrayList(String[] ing){
@@ -25,9 +27,14 @@ public class Recipe {
         return this.ingredients.size();
     }
 
-    public double getCal(){ return this.cal; }
+    public double getCal(){
+        return this.cal;
+    }
     public String getName(){
         return this.name;
+    }
+    public String getImage() {
+        return this.img;
     }
     public ArrayList<String> getIngredients(){
         return this.ingredients;

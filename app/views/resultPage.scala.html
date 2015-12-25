@@ -1,4 +1,4 @@
-@(result: String, calNeed: Double)
+@(result: String, recommended: List[model.Recipe], subrecommended: List[model.Recipe])
 
 <!DOCTYPE html>
 
@@ -29,7 +29,7 @@
       </div>
     </div>
   </nav>
-  <div class="container" ng-controller="ResultController as resultCtrl" ng-init="resultCtrl.calPerMeal = @calNeed">
+  <div class="container" ng-controller="ResultController as resultCtrl">
     <div id="result" class="result text-center panel panel-default content-panel">
       <h2>Your result</h2>
       <p>
@@ -38,23 +38,43 @@
     </div>
     <div id="recommend" class="recommend text-center form-group panel panel-default content-panel">
       <h2>Recommended</h2>
-      <div class="recommend-menu" ng-if="resultCtrl.recommend.length > 0 " ng-repeat="recipe in resultCtrl.recommend">
-        <div class="panel-body">
-          <div class="row">
-            <div class="col-md-6">
-              <img src="{{recipe.img}}" class="img-responsive" alt="Cinque Terre" width="150" height="150">
-            </div>
-            <div class="col-md-6 text-left">
-              <h4>{{recipe.name}}</h4>
-                Ingredient:
-                <span ng-repeat="ingredient in recipe.ingredients">{{ingredient.name}} </span>
-              <p>
-                Calories: {{recipe.calories}}
-              </p>
+      @for( recipe <- recommended ) {
+        <div class="recommend-menu">
+          <div class="panel-body">
+            <div class="row">
+              <div class="col-md-6">
+                <img src="@recipe.getImage()" class="img-responsive" alt="Cinque Terre" width="150" height="150">
+              </div>
+              <div class="col-md-6 text-left">
+                <h4>@recipe.getName()</h4>
+                Ingredient: @recipe.getIngredients()
+                <p>
+                  Calories: @recipe.getCal()
+                </p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      }
+      <h3 ng-if="@subrecommended.size() > 0">Missing 1 or 2 ingredients</h3>
+      @for( recipe <- subrecommended ) {
+        <div class="recommend-menu">
+          <div class="panel-body">
+            <div class="row">
+              <div class="col-md-6">
+                <img src="@recipe.getImage()" class="img-responsive" alt="Cinque Terre" width="150" height="150">
+              </div>
+              <div class="col-md-6 text-left">
+                <h4>@recipe.getName()</h4>
+                Ingredient: @recipe.getIngredients()
+                <p>
+                  Calories: @recipe.getCal()
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      }
     </div>
     <div class="footer-btn">
       <a class="btn btn-red width-50" href="/">Try Again</a>
@@ -65,7 +85,7 @@
   <div class="row">
     <div class="col-md-6">
       <p>
-        Created by GuroKung
+        Created by GuroKung & iNont & Maxmi
       </p>
     </div>
     <div class="col-md-6">
