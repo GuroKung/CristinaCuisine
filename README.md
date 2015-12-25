@@ -9,7 +9,8 @@ and suggest them to the users. Presenting the appropriate dishes within
 the calories range is the main goal for the early stages of the application.
 
 
-How to use the application in Localhost
+How to use the application in Localhost  
+
 1. Install Play Framework Java  
   >Download from https://www.playframework.com/download
 
