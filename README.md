@@ -23,3 +23,11 @@ How to use the application in Localhost
 
 Web URL  
 https://cristina-cuisine.herokuapp.com/
+
+## Team Member    
+5610545684 Nichamon Han-idhikul    
+5610546222 Chonnipa Kittisiriprasert   
+5610546257 Natchanon Charoensuk      
+5610546699 Kittipat Promdirek          
+5610546702 Jiratchaya Intaragumhaeng     
+5610546788 Vasupol Chatmethakul    

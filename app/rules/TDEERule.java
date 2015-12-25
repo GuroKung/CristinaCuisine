@@ -57,7 +57,7 @@ public class TDEERule {
     @Action(order = 3)
     public void solveTDEEperMeal() throws Exception {
         TDEEperMeal = TDEE/3;
-        result = String.format("Your TDEE = %.2f and your need %.2f Kcal per meal",TDEE,TDEEperMeal);
+        result = String.format(" / TDEE = %.2f / Need more %.2f Kcal per meal",TDEE,TDEEperMeal);
     }
 
     public void setInput(double weight, double height, String gender, int age, double activity_factor, double needCal) {

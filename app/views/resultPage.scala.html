@@ -33,7 +33,7 @@
     <div id="result" class="result text-center panel panel-default content-panel">
       <h2>Your result</h2>
       <p>
-        @result
+        <h4> @result </h4>
       </p>
     </div>
     <div id="recommend" class="recommend text-center form-group panel panel-default content-panel">
@@ -56,7 +56,7 @@
           </div>
         </div>
       }
-      <h3 ng-if="@subrecommended.size() > 0">Missing 1 or 2 ingredients</h3>
+      <h3 ng-if="@subrecommended.size() > 0">Recipe that miss 1 or 2 ingredients</h3>
       @for( recipe <- subrecommended ) {
         <div class="recommend-menu">
           <div class="panel-body">

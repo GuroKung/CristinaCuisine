@@ -32,7 +32,7 @@ public class BMIRule {
     public void checkUnderweight() throws Exception {
         //if (Double.compare(bmi, 18.5) < 0)
         if (18.5 > bmi) {
-            result = String.format("Your BMI =  %.2f and you have an underweight", bmi);
+            result = String.format("BMI =  %.2f (Underweight)", bmi);
             need = 200;
         }
         //result = "Your BMI = "+bmi+" and you have an underweight";
@@ -41,7 +41,7 @@ public class BMIRule {
     @Action(order = 3)
     public void checkHealthyweight() throws Exception {
         if( 18.5 < bmi & bmi < 25 ) {
-            result = String.format("Your BMI =  %.2f and you have a healthy weight", bmi);
+            result = String.format("BMI =  %.2f (Healthy weight)", bmi);
         }
         //result = "Your BMI = "+bmi+" and you have a normal weight";
     }
@@ -49,7 +49,7 @@ public class BMIRule {
     @Action(order = 4)
     public void checkOverweight() throws Exception {
         if ( 25 < bmi & bmi < 29.99 ) {
-            result = String.format("Your BMI =  %.2f and you have an overweight", bmi);
+            result = String.format("BMI =  %.2f (Overweight)", bmi);
             need = -100;
         }
         //result = "Your BMI = "+bmi+" and you have an overweight";
@@ -58,7 +58,7 @@ public class BMIRule {
     @Action(order = 5)
     public void checkObese() throws Exception {
         if ( 30 < bmi & bmi < 34.99 ) {
-            result = String.format("Your BMI =  %.2f and you have an obese", bmi);
+            result = String.format("BMI =  %.2f (Obese)", bmi);
             need = -200;
         }//result = "Your BMI = "+bmi+" and you have an overweight";
     }
@@ -66,7 +66,7 @@ public class BMIRule {
     @Action(order = 6)
     public void checkSeverelyObese() throws Exception {
         if ( 35 < bmi & bmi < 39.99 ) {
-            result = String.format("Your BMI =  %.2f and you have a severely obese", bmi);
+            result = String.format("BMI =  %.2f (Severely obese)", bmi);
             need = -300;
         }//result = "Your BMI = "+bmi+" and you have an overweight";
     }
@@ -74,7 +74,7 @@ public class BMIRule {
     @Action(order = 7)
     public void checkMorbidlyObese() throws Exception {
         if ( 40 < bmi ) {
-            result = String.format("Your BMI =  %.2f and you have a morbidly obese", bmi);
+            result = String.format("BMI =  %.2f (Morbidly obese)", bmi);
             need = -400;
         }//result = "Your BMI = "+bmi+" and you have an overweight";
     }
